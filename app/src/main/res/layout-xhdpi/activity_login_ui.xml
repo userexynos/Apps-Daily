@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.LoginUI">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="-20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/clouds"
+            android:layout_marginStart="-20dp" />
+        <ImageView
+            android:id="@+id/logoLogin"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/stats" />
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@id/logoLogin"
+            android:layout_centerHorizontal="true"
+            android:text="@string/halo_selamat_datang_kembali"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/useredtLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/TextView1"
+            android:layout_centerHorizontal="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:hint="@string/email"
+                android:inputType="textWebEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passedtLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/useredtLayout"
+            android:layout_centerHorizontal="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:hint="@string/passwordHint"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btmasuk"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/passedtLayout"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/masuk"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/btn"/>
+        <TextView
+            android:id="@+id/tvdaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btmasuk"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/tidak_memiliki_akun_daftar_dulu_yuk"/>
+
+    </RelativeLayout>
+</ScrollView>

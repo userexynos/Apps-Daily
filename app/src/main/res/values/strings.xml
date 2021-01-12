@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">AppsDaily</string>
+    <string name="title_activity_home_ui">HomeUI</string>
+    <string name="title_home">Penggunaan</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="email">Email</string>
+    <string name="halo_selamat_datang_kembali">Halo,\nSelamat datang kembali</string>
+    <string name="passwordHint">Password</string>
+    <string name="lupa_password">Lupa Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="tidak_memiliki_akun_daftar_dulu_yuk">Tidak memiliki akun? <u><b>Daftar</b></u> dulu Yuk</string>
+    <string name="halo_lakukan_register_dahulu_yuk">Halo,\nLakukan Register dahulu yuk!</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="profile">Profile</string>
+    <string-array name="jenis_kelamin">
+        <item>Perempuan</item>
+        <item>Laki-Laki</item>
+    </string-array>
+    <string-array name="pendidikan_terakhir">
+        <item>No formal education</item>
+        <item>SD</item>
+        <item>SMP atau setara</item>
+        <item>SMA atau setara</item>
+        <item>Vocational / Diploma / Akademi atau Setara</item>
+        <item>S1</item>
+        <item>S2 atau Lebih tinggi</item>
+    </string-array>
+    <string-array name="pekerjaan">
+        <item>Staff</item>
+        <item>Supervisor</item>
+        <item>Manager</item>
+        <item>PNS</item>
+        <item>Wiraswasta</item>
+        <item>Ibu Rumah Tangga</item>
+        <item>Pelayan/Kasir/Buruh</item>
+        <item>Supir Online</item>
+        <item>Pekerja Sosial</item>
+        <item>Dokter/Musisi/Pengacara/Model/Artis</item>
+        <item>Pelajar</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="penghasilan">
+        <item>-700000</item>
+        <item>700000</item>
+        <item>1000000</item>
+        <item>1250000</item>
+        <item>1500000</item>
+        <item>2000000</item>
+        <item>3000000</item>
+        <item>4000000</item>
+        <item>5000000</item>
+        <item>6000000</item>
+        <item>7000000</item>
+        <item>8000000</item>
+        <item>10000000</item>
+        <item>15000000</item>
+    </string-array>
+    <string-array name="nama_hp">
+        <item>Samsung</item>
+        <item>Xiaomi</item>
+        <item>Vivo</item>
+        <item>Oppo</item>
+        <item>iPhone</item>
+        <item>RealMe</item>
+        <item>Huawei</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="harga_hp">
+        <item>-700000</item>
+        <item>700000</item>
+        <item>1000000</item>
+        <item>1250000</item>
+        <item>1500000</item>
+        <item>2000000</item>
+        <item>3000000</item>
+        <item>4000000</item>
+        <item>5000000</item>
+        <item>6000000</item>
+        <item>7000000</item>
+        <item>8000000</item>
+        <item>10000000</item>
+    </string-array>
+    <string-array name="preferensi_pembelian_hp">
+        <item>Gaming/Streaming</item>
+        <item>Camera Feature</item>
+        <item>Messaging/Social Media</item>
+        <item>Mobile Working</item>
+    </string-array>
+</resources>

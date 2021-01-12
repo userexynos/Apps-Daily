@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.LoginUI">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="-20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/clouds"
+            android:layout_marginStart="-20dp" />
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/stats"
+            android:contentDescription="TODO" />
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="18dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/halo_lakukan_register_dahulu_yuk"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/namaedtLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/foto"
+            android:layout_centerHorizontal="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nama"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:hint="@string/nama_lengkap"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nomoredtLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namaedtLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nomor_telepon"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:hint="@string/nomor_telepon"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/jenis_kelamin"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/nomoredtLayout"
+            app:met_floatingLabel="normal"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:hint="Pilih Jenis Kelamin"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailedtLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jenis_kelamin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:hint="Email"
+                android:inputType="textWebEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Baru diEdit -->
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailedtLayout"
+            android:id="@+id/pekerjaan"
+            android:hint="Pekerjaan"
+            android:layout_centerHorizontal="true"
+            app:met_floatingLabel="normal" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pekerjaan"
+            android:hint="Penghasilan"
+            android:id="@+id/penghasilan"
+            app:met_floatingLabel="normal" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_domisili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/penghasilan"
+            android:layout_centerHorizontal="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/domisili"
+                android:layout_width="290dp"
+                android:layout_height="100dp"
+                android:gravity="top|left"
+                android:hint="Kota Domisili"
+                android:inputType="textMultiLine|text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kota_domisili"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/edt_domisili"
+            android:orientation="vertical">
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/provinsi"
+                android:hint="Provinsi"
+                app:met_floatingLabel="normal" />
+            <Button
+                android:id="@+id/tetapkan"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kota_domisili"
+                android:layout_alignStart="@+id/kota_domisili"
+                android:background="@drawable/btn"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="Tetapkan Provinsi" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/kota"
+                android:visibility="gone"
+                android:hint="Kota"
+                app:met_floatingLabel="normal" />
+
+        </LinearLayout>
+
+        <!-- Baru diEdit end -->
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/edu"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/kota_domisili"
+            app:met_floatingLabel="normal"
+            android:textColor="@color/colorAccent"
+            android:hint="Pendidikan"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ttledtLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edu"
+            android:layout_centerHorizontal="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tanggal_lahir"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:hint="Tanggal Lahir"
+                android:focusable="false"
+                tools:ignore="Deprecated"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Baru Ditambahkan -->
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ttledtLayout"
+            android:hint="Merk Handphone"
+            android:id="@+id/merkHp"
+            android:layout_centerHorizontal="true"
+            app:met_floatingLabel="normal" />
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/merkHp"
+            android:hint="Kisaran Harga Handphone"
+            android:id="@+id/harga_hp"
+            android:layout_centerHorizontal="true"
+            app:met_floatingLabel="normal" />
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/harga_hp"
+            android:hint="Preferensi Membeli Handphone"
+            android:id="@+id/preferensi_beli_hp"
+            android:layout_centerHorizontal="true"
+            app:met_floatingLabel="normal" />
+
+        <!-- baru ditambahkan end -->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passedtLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/preferensi_beli_hp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/daftar"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/passedtLayout"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="daftar"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/btn"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+</ScrollView>
